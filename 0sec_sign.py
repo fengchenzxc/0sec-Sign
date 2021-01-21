@@ -76,5 +76,8 @@ def main():
     tokens = login(uuid)
     sign(tokens)
 
+def main_handler(event, context):
+  return main()
+
 if __name__ == '__main__':
     main()
